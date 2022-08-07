@@ -46,7 +46,7 @@ services:
   emqx:
     container_name: emqx
     image: emqx/emqx:4.2.3
-    restart: always
+    #restart: always
 
     ports:
       - 18083:18083

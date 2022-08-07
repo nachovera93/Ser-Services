@@ -1,3 +1,5 @@
+#Para crear node_modules, instalar nuevas librerias, etc
+
 version: "3.8"
 
 
@@ -8,7 +10,7 @@ services:
     image: "node:14"
     working_dir: /home/node/app
     volumes:
-      - ./app/:/home/node/app
+      - ./app/:/home/node/app   #Integra node_modules dentro de la carpeta app
 
 
     command: sh -c "npm install"
