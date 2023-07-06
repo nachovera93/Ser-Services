@@ -63,10 +63,10 @@ services:
       - mongo
 
     extra_hosts:
-      - "localhost:54.94.243.121"
+      - "localhost:127.0.0.1"
 
     environment:
-      EMQX_NAME: ioticos-gl
+      EMQX_NAME: iotser
       EMQX_HOST: 127.0.0.1
 
       TZ: "${TZ}"
@@ -92,7 +92,7 @@ services:
       EMQX_AUTH__MONGO__PASSWORD: "${MONGO_PASSWORD}"
       EMQX_AUTH__MONGO__AUTH_SOURCE: admin
 
-      EMQX_AUTH__MONGO__DATABASE: "ioticos_god_level"
+      EMQX_AUTH__MONGO__DATABASE: "iotser_db"
       EMQX_AUTH__MONGO__AUTH_QUERY__COLLECTION: "emqxauthrules"
 
       EMQX_AUTH__MONGO__SUPER_QUERY__COLLECTION: "emqxauthrules"
